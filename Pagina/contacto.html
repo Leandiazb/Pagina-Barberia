@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+
+        <div class="caja">
+            <h1> <img src="imagenes/logo.png" alt="Logo de la barberia alura"></h1>
+
+            <nav> <!--se utiliza para ubicar nuestro panel de navegacion-->
+                <ul> <!-- es para hacer una lista no ordenada-->
+    
+                    <li><a href="index.html">Home</a></li> <!--representa cada item de la pagina-->
+                    <li> <a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <!--La etiqueta a sirve para crear elances a otras paginas-->
+        
+                </ul>
+    
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <form>
+            <label for="nombreapellido">Nombre y apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+            <!--requiered se usa para decir que ese campo es obligatorio-->
+            
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com"
+            >
+            
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required
+            placeholder="0000-000000">
+            <!--placeholder se usa paera mostrar el tipo de dato que queremos recibir -->
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" class="input-padron" required cols="70" rows="10"></textarea>
+
+         <fieldset>
+
+            <legend>¿Como le gustaria ser contactado?</legend>
+
+            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+            
+
+            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+           
+
+            <label for="radio-WSP"><input type="radio" name="contacto" value="WSP" id="radio-WSP" checked> WSP</label>
+           
+
+            <!--PARA QUE NO QUEDEN TODOS LOS CIERCULOS SELECCIONADOS HAY QUE CREAR LA ETIQUETA NAME-->
+        </fieldset>
+
+        <fieldset>
+            <legend>¿En que horario prefiere ser atendido?</legend>
+            <select>
+    
+                <option value="">Mañana</option>
+                <option value="">Tarde</option>
+                <option value="">Noche</option>
+    
+            </select>  
+
+        </fieldset>
+        <!--fieldset se usa parar referirse a un tipo de dato-->
+        
+        
+        <label class="checkox" for=""><input type="checkbox" checked>¿Le gustaria recibir novedades de la barberia alura?</label>
+        
+            <input type="submit" class="enviar">
+      </form>
+
+      <table>
+
+        <thead>
+            <tr>
+                <td>Día</td>
+                <th>Horario</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>08h - 20h</td>
+    
+            </tr>
+    
+            <tr>
+                <td>Miercoles</td>
+                <td>08h - 20h</td>
+    
+            </tr>
+    
+            <tr>
+                <td>Viernes</td>
+                <td>08h - 20h</td>
+    
+            </tr>
+
+        </tbody>
+         
+      </table>
+
+    </main>
+
+    <footer><!--es para hacer el pie de pagina-->
+
+        <img src="imagenes/logo-blanco.png" alt="logo de barberia alura">
+        <p class="copy">&copy Copyright Barberia Alura 2020</p>
+
+    </footer>
+</body>
+
+</html>

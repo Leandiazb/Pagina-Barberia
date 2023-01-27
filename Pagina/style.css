@@ -1,0 +1,294 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline; /* se utiliza para que la linea del encabezado quede alineada y no una debajo de otra*/
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav a:hover{
+    color: #ff0000;
+    text text-decoration: underline;
+    
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* esto alinea toda la cuadricula*/
+    border: 2px solid #000000;
+    border-color: black;
+    border width: 2px;
+    border style: solid;
+    border-radius: 10px;
+    
+    
+}
+
+.productos li:hover{
+    border-color: #ff0000;
+
+}
+
+.productos li:active{
+    border-color: #30f309;
+    
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+    
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copy{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*main{
+    width: 940px;
+    margin: 0 auto;    
+}
+*/
+form{
+    margin: 40px 0;
+    
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 20px;
+    width: 50%;
+}
+
+.checkox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange ;
+    transform: scale(1.20);
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/** css para nuestra home------------*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    /* el 2em multiplica por dos la fuente padron del navegador*/ 
+    margin: 0 0 1em;
+    clear: left;
+    color: rgb(red, green, blue);
+    
+}
+
+
+
+.principal p{
+    margin: 0 0 1em;
+     
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+    
+    
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa{
+    padding: 3em 0 ;
+    background: linear-gradient(#fefefe, #888888);
+    
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+   
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-defirenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content: "★";
+}
+
+/* first child se usa para alterar la lista que quiera si agrego un parentisis enfrente con el numero de la lista que quiero editar solo se modifica ese*/
+
+.items:first-child{
+    font-weight: bold;
+
+}
+
+.imagenDiferenciales{
+    width: 60%;
+ transition: 400ms;
+  box-shadow: 10px 10px 10px 5px black;
+}
+
+.imagenDiferenciales:hover{
+  opacity: 0.3;
+
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+/* con esta etiqueta le estamos diciendo que si encuentra una pantalla de 480px haga lo siguiente */
+@media screen and (max-width:480px) {
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+        .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+            width: auto;
+        
+    }
+    .lista-defirenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+}
